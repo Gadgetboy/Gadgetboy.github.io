@@ -16,7 +16,7 @@
 
         requestURL = "https://api.spark.io/v1/devices/" + deviceID + "/" + varName + "/?access_token=" + accessToken;
         $.getJSON(requestURL, function(json) {
-                 document.getElementById("temp").innerHTML = json.result + "&deg; F";
+                 document.getElementById("temp").innerHTML = json.result + "&deg; C";
                  document.getElementById("temp").style.fontSize = "28px";
                  document.getElementById("tstamp").innerHTML = json.coreInfo.last_heard;
                  });
